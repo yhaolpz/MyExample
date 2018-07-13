@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/arch" />
+            <option value="$PROJECT_DIR$/autosplittextview" />
+            <option value="$PROJECT_DIR$/leakcanarytest" />
+            <option value="$PROJECT_DIR$/meitulocation" />
+            <option value="$PROJECT_DIR$/pulltorefrash" />
+            <option value="$PROJECT_DIR$/showinputmethod" />
+            <option value="$PROJECT_DIR$/xxmainpage" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
