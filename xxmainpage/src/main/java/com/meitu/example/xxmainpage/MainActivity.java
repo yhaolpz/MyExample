@@ -1,11 +1,10 @@
 package com.meitu.example.xxmainpage;
 
 import android.animation.ValueAnimator;
-import android.os.Build;
+import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mRelative = (RelativeLayout) findViewById(R.id.relative);
-        mAppbarlayout = (AppBarLayout) findViewById(R.id.appbarlayout);
+//        mAppbarlayout = (AppBarLayout) findViewById(R.id.appbarlayout);
         mTv = (TextView) findViewById(R.id.tv);
         mTitle = (TextView) findViewById(R.id.title);
         mExpand = (Button) findViewById(R.id.expand);
@@ -56,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         mTitle.setText("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         mTv.setText("1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n");
 
-        setFlag2();
+//        setFlag2();
 
 
 
@@ -103,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 int h = (int) animation.getAnimatedValue();
                 setExpandViewHeight(h);
                 if (h == 500) {
-                    setFlag2();
+//                    setFlag2();
                 }
             }
         });

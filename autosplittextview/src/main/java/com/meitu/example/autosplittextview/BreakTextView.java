@@ -1,11 +1,13 @@
 package com.meitu.example.autosplittextview;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.TextView;
 
 /**
@@ -16,6 +18,8 @@ import android.widget.TextView;
  * Created by lupeng.kang on 17/1/10.
  */
 public class BreakTextView extends android.support.v7.widget.AppCompatTextView {
+
+    private static final String TAG = "BreakTextView";
     private boolean mEnabled = true;
 
     public BreakTextView(Context context) {
@@ -41,13 +45,21 @@ public class BreakTextView extends android.support.v7.widget.AppCompatTextView {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        Log.d(TAG, "onMeasure: getWidth()=" + getWidth() + " getHeight=" + getHeight());
+        Log.d(TAG, "onMeasure: getMeasuredWidth()=" + getMeasuredWidth() + " getMeasuredHeight=" + getMeasuredHeight());
         if (getWidth() > 0 && getHeight() > 0 && mEnabled) {
             CharSequence newText = autoSplitText(this);
             if (!TextUtils.isEmpty(newText)) {
                 setText(newText);
             }
         }
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+        Log.d(TAG, "onDraw: getWidth()=" + getWidth() + " getHeight=" + getHeight());
     }
 
     public void setSplitText() {
