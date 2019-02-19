@@ -1,1 +1,1 @@
-include ':app', ':meitulocation', ':leakcanarytest', ':pulltorefrash', ':showinputmethod', ':arch', ':autosplittextview', ':xxmainpage', ':linespacetextview'
+include ':app', ':meitulocation', ':leakcanarytest', ':pulltorefrash', ':showinputmethod', ':arch', ':autosplittextview', ':xxmainpage', ':linespacetextview', ':xxtoolpagefullscreen'
